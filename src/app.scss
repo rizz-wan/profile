@@ -1,0 +1,221 @@
+@import '~office-ui-fabric-core/dist/sass/References';
+@import './app/styles/border.scss';
+@import './app/styles/variables.scss';
+@import './app/styles/generics.scss';
+
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.ms-Pivot,
+.card {
+  border-radius: $border-radius;
+}
+
+.card {
+  @include ms-motion-slideUpIn;
+  padding: 16px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.ms-Pivot {
+  * {
+    border-radius: $border-radius;
+    font-size: 18px;
+    font-family: pKalam;
+    transition-duration: 0ms !important;
+    font-weight: 700 !important;
+  }
+  button {
+    padding: 0;
+  }
+  .ms-Pivot-link:hover,
+  .is-selected {
+    background-color: transparent;
+  }
+  .ms-Pivot-text,
+  .ms-Pivot-count {
+    vertical-align: text-top;
+  }
+  .ms-Pivot-link {
+    @include single-motion-bottom(2px, #0078d4);
+  }
+  .is-selected {
+    * {
+      color: #0078d4;
+    }
+  }
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 8px;
+  display: flex;
+  margin: 8px;
+  .ms-Button {
+    width: 100%;
+  }
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  position: fixed;
+  transform: rotate(180deg) !important;
+  font-size: 15px;
+  .link {
+    color: #0078d4;
+  }
+}
+
+.vl {
+  top: 175px;
+  left: 0;
+}
+
+.vr {
+  top: 200px;
+  right: 0;
+}
+
+.sub-pivot {
+  .ms-Pivot {
+    margin: 0 0 16px;
+  }
+}
+
+.ms-Panel-main {
+  margin: 16px;
+  border-radius: $border-radius;
+  outline: 2px solid #0078d4;
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+.ms-Button {
+  border-radius: $border-radius;
+}
+
+.custom-button-container {
+  margin-top: 12px;
+  justify-content: center;
+  .custom-button {
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: flex-end;
+    @include single-motion-bottom(2px, #0078d4);
+    .custom-button-icon {
+      margin-right: 4px;
+    }
+  }
+}
+
+.disabled-button {
+  cursor: not-allowed !important;
+  * {
+    cursor: not-allowed !important;
+  }
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -20px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column {
+  margin: auto;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: $border-radius !important;
+}
+
+.iframe-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skill-cloud {
+  height: 316px;
+  background-image: url('./app/assets/img/sking.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (max-width: 1200px-1) {
+    height: 296px;
+  }
+}
+
+.f-90 {
+  animation: flip 0.5s !important;
+}
+
+@keyframes flip {
+  0% {
+    transform: translate3d(0, 0, 0) rotateY(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(0, -48px, 0) rotateY(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotateY(0deg);
+    opacity: 1;
+  }
+}

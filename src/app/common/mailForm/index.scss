@@ -1,0 +1,19 @@
+.mailForm {
+  background-image: url('../../assets/img/bg3.png');
+  background-repeat: no-repeat;
+  display: block !important;
+  .ms-ShimmerLine-root {
+    height: 35px;
+  }
+  .tip {
+    position: relative;
+    left: 2px;
+    top: -1px;
+  }
+  h3 {
+    font-family: pKalam;
+    font-size: 24px;
+    font-weight: 100 !important;
+    margin: 8px 0;
+  }
+}

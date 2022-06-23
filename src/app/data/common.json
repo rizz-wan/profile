@@ -1,0 +1,21 @@
+{
+  "experience": "Experience",
+  "education": "Education",
+  "works": "Works",
+  "quickThought": "Quick thought...",
+  "mailPlaceholder": "Write a message/feedback/thought/suggestion, I’m all ears.",
+  "mailSuccess": "Noted! Thank you for your kind words, will reach out to you soon :)",
+  "mailError": "Oops, something went wrong :(",
+  "mailTip": "Tip: Prefer adding your email, so that I can keep you in the loop.",
+  "mailTextLabel": "The name’s:",
+  "mailTextPlaceholder": "Bond, James Bond",
+  "worksSubheader": "A list of designs, tools, pens and other kinds of projects I’ve developed and worked on over the years",
+  "worksSubheaderAlt": "",
+  "penProgress": "And others are in progress...",
+  "seeAll": "See all",
+  "send": "Send",
+  "readTheBlog": "Read the blog",
+  "seeMyWork": "See my work",
+  "tabsNames": ["All", "About", "Works", "Blog"],
+  "seeLive": "See live"
+}

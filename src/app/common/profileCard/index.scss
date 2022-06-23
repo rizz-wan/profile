@@ -1,0 +1,11 @@
+@import '../../styles/commonStyles.scss';
+
+.profile {
+  background-image: url('../../assets/img/bg2.png');
+  display: block !important;
+  .name {
+    @extend .decorated-text;
+    line-height: 14px;
+    font-size: 32px;
+  }
+}

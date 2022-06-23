@@ -1,0 +1,21 @@
+@mixin single-motion-bottom($height, $color) {
+  &:before {
+    transition: ease;
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    height: $height;
+    width: 20%;
+    background-color: $color;
+    border-radius: $border-radius;
+    left: 40%;
+    bottom: 4px;
+    transition-duration: 0.25s;
+  }
+  &:hover {
+    &:before {
+      left: 25%;
+      width: 50%;
+    }
+  }
+}

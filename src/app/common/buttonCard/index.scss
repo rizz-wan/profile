@@ -1,0 +1,82 @@
+.theme-button-container {
+  background-image: url('../../assets/img/bg4.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 108px;
+  justify-content: center;
+  .button,
+  .thumb {
+    background-size: contain;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    border-radius: 50px;
+  }
+  .button {
+    height: 50px;
+    width: 106px;
+    padding: 2px;
+    background-image: url('../../assets/img/bl.jpeg');
+    align-self: center;
+    cursor: pointer;
+  }
+  .bl {
+    animation-name: l;
+  }
+  @keyframes l {
+    from {
+      background-image: url('../../assets/img/bl.jpeg');
+    }
+    to {
+      background-image: url('../../assets/img/bd.jpeg');
+    }
+  }
+  .bd {
+    animation-name: d;
+  }
+  @keyframes d {
+    from {
+      background-image: url('../../assets/img/bd.jpeg');
+    }
+    to {
+      background-image: url('../../assets/img/bl.jpeg');
+    }
+  }
+
+  .thumb {
+    box-shadow: 2px 2px 5px #2b2b2b, -2px -2px 5px transparent !important;
+    width: 50px;
+    height: 50px;
+    background-image: url('../../assets/img/day.png');
+  }
+  .btd {
+    animation-name: td;
+  }
+  @keyframes td {
+    from {
+      background-image: url('../../assets/img/night.png');
+      margin-left: 56px;
+      transform: rotate(180deg);
+    }
+    to {
+      margin-left: 0;
+      background-image: url('../../assets/img/day.png');
+      transform: rotate(0deg);
+    }
+  }
+  .btl {
+    animation-name: tl;
+  }
+  @keyframes tl {
+    from {
+      background-image: url('../../assets/img/day.png');
+      margin-left: 0;
+      transform: rotate(0deg);
+    }
+    to {
+      margin-left: 56px;
+      background-image: url('../../assets/img/night.png');
+      transform: rotate(180deg);
+    }
+  }
+}

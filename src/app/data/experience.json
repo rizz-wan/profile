@@ -1,0 +1,50 @@
+[
+  {
+    "year": "2022",
+    "date": "March 1",
+    "designation": "Software Engineer 2",
+    "company": {
+      "text": "MAQ Software Pvt. Ltd.",
+      "link": "https://maqsoftware.com/"
+    },
+    "location": "Mumbai, India",
+    "summary": [
+      "Migrated template engine of web app from dust to glimmer.",
+      "Worked extensively in EmberJS to improve current features and add new features in a web app.",
+      "Plan estimate and develop new features from scratch."
+    ]
+  },
+  {
+    "year": "2020",
+    "date": "September 3",
+    "designation": "Software Engineer 1",
+    "company": {
+      "text": "MAQ Software Pvt. Ltd.",
+      "link": "https://maqsoftware.com/"
+    },
+    "location": "Mumbai, India",
+    "summary": [
+      "Migrated web app from Angular to React.",
+      "Integrated Kendo UI and Fluent UI with React.",
+      "Refine back-end of Angular based web app with micro-service architecture.",
+      "Create and improve CI/CD pipelines for seamless deployments of Webapp and NuGet packages."
+    ]
+  },
+  {
+    "year": "2019",
+    "date": "September 3",
+    "designation": "Software Intern",
+    "company": {
+      "text": "MAQ Software Pvt. Ltd.",
+      "link": "https://maqsoftware.com/"
+    },
+    "location": "Mumbai, India",
+    "summary": [
+      "Worked extensively on improving and adding new features and pages with cross browser compatibility to Angular based web app.",
+      "Refined and created micro-service architecture for the app.",
+      "Worked on creating extension for Azure DevOps and VS Code.",
+      "Unit testing and end-to-end testing, worked with Jasmine, protractor and selenium.",
+      "Created a time critical and high impact Angular based web app (SPA) from scratch."
+    ]
+  }
+]
