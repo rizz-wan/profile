@@ -64,14 +64,14 @@ export class ShowCase extends React.Component<IShowCaseProps, IShowCaseState> {
           incrementor={0.2}
           id="1"
           shouldPause={this.state.shouldPause}
-          showcase={this.portfolio.showcase}
+          showcase={this.portfolio.showcase.pens}
           cta={this.common.seeLive}
         />
         <SlidEr
           incrementor={0.25}
           id="2"
           shouldPause={this.state.shouldPause}
-          showcase={this.portfolio.showcase}
+          showcase={this.portfolio.showcase.projects}
           cta={this.common.seeLive}
         />
         <Stack horizontal horizontalAlign="space-between" className="m-t-2">

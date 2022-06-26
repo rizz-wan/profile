@@ -5,5 +5,8 @@ export interface IPortfolio {
   portfolioSubheader: string;
   projectsText: string;
   pens: string;
-  showcase: { link: string; src: string; alt: string }[];
+  showcase: {
+    pens: { link: string; src: string; alt: string }[];
+    projects: { link: string; src: string; alt: string }[];
+  };
 }

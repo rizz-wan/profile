@@ -12,51 +12,90 @@
     "rNmPdaa",
     "ZEKZYVy"
   ],
-  "showcase": [
-    {
-      "link": "https://codepen.io/rizz-wan/pen/BaJJjgQ",
-      "src": "/variable scroll.png",
-      "alt": ""
-    },
-    {
-      "link": "https://codepen.io/rizz-wan/pen/PoEpram",
-      "src": "/vertical scroll.png",
-      "alt": ""
-    },
-    {
-      "link": "https://codepen.io/rizz-wan/pen/BaRMxBX",
-      "src": "/neu button.png",
-      "alt": ""
-    },
-    {
-      "link": "https://codepen.io/rizz-wan/pen/BaRbbbv",
-      "src": "/rgb.png",
-      "alt": ""
-    },
-    {
-      "link": "https://codepen.io/rizz-wan/pen/eYWXbzB",
-      "src": "/expanding gallery.png",
-      "alt": ""
-    },
-    {
-      "link": "https://codepen.io/rizz-wan/pen/rNmPdaa",
-      "src": "/ios cursor.png",
-      "alt": ""
-    },
-    {
-      "link": "https://codepen.io/rizz-wan/pen/ZEKZYVy",
-      "src": "/email.png",
-      "alt": ""
-    },
-    {
-      "link": "https://codepen.io/rizz-wan/pen/ExmGBEX",
-      "src": "/neu button alt.png",
-      "alt": ""
-    },
-    {
-      "link": "https://codepen.io/rizz-wan/pen/LYQrGXM",
-      "src": "/neu clock.png",
-      "alt": ""
-    }
-  ]
+  "showcase": {
+    "pens": [
+      {
+        "link": "https://codepen.io/rizz-wan/pen/BaJJjgQ",
+        "src": "/variable scroll.png",
+        "alt": ""
+      },
+      {
+        "link": "https://codepen.io/rizz-wan/pen/PoEpram",
+        "src": "/vertical scroll.png",
+        "alt": ""
+      },
+      {
+        "link": "https://codepen.io/rizz-wan/pen/BaRMxBX",
+        "src": "/neu button.png",
+        "alt": ""
+      },
+      {
+        "link": "https://codepen.io/rizz-wan/pen/BaRbbbv",
+        "src": "/rgb.png",
+        "alt": ""
+      },
+      {
+        "link": "https://codepen.io/rizz-wan/pen/eYWXbzB",
+        "src": "/expanding gallery.png",
+        "alt": ""
+      },
+      {
+        "link": "https://codepen.io/rizz-wan/pen/rNmPdaa",
+        "src": "/ios cursor.png",
+        "alt": ""
+      },
+      {
+        "link": "https://codepen.io/rizz-wan/pen/ZEKZYVy",
+        "src": "/email.png",
+        "alt": ""
+      },
+      {
+        "link": "https://codepen.io/rizz-wan/pen/ExmGBEX",
+        "src": "/neu button alt.png",
+        "alt": ""
+      },
+      {
+        "link": "https://codepen.io/rizz-wan/pen/LYQrGXM",
+        "src": "/neu clock.png",
+        "alt": ""
+      }
+    ],
+    "projects": [
+      {
+        "link": "https://github.com/rizz-wan/PanX",
+        "src": "/panX.png",
+        "alt": ""
+      },
+      {
+        "link": "https://geek.irizwan.com/",
+        "src": "/tow.png",
+        "alt": ""
+      },
+      {
+        "link": "https://rizz-wan.github.io/high-light/",
+        "src": "/highLight.png",
+        "alt": ""
+      },
+      {
+        "link": "https://rizz-wan.github.io/navlet/",
+        "src": "/navlet.png",
+        "alt": ""
+      },
+      {
+        "link": "https://mocktail.vercel.app/",
+        "src": "/mocktail.png",
+        "alt": ""
+      },
+      {
+        "link": "https://github.com/rizz-wan/LinkX",
+        "src": "/linkX.png",
+        "alt": ""
+      },
+      {
+        "link": "https://www.irizwan.com/all",
+        "src": "/irizwan.png",
+        "alt": ""
+      }
+    ]
+  }
 }
