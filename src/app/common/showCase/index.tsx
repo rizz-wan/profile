@@ -27,8 +27,11 @@ interface IShowCaseState {
 }
 
 export class ShowCase extends React.Component<IShowCaseProps, IShowCaseState> {
+  on = new Audio(`${process.env.PUBLIC_URL}/assets/audio/on.mp3`);
+  off = new Audio(`${process.env.PUBLIC_URL}/assets/audio/off.mp3`);
   common: ICommon;
   portfolio: IPortfolio;
+
   constructor(props: IShowCaseProps) {
     super(props);
     this.state = {
@@ -40,6 +43,9 @@ export class ShowCase extends React.Component<IShowCaseProps, IShowCaseState> {
 
   handleSlide = (): void => {
     this.setState({ shouldPause: !this.state.shouldPause });
+    const currentAudio = this.state.shouldPause ? this.on : this.off;
+    currentAudio.volume = 0.1;
+    currentAudio.play();
   };
   render(): JSX.Element {
     const theme = getTheme();

@@ -65,7 +65,7 @@ export class SlidEr extends React.Component<ISlidErProps> {
                     rel="noreferrer"
                   >
                     <img
-                      src={`${process.env.PUBLIC_URL}/showcase${showcaseItem.src}`}
+                      src={`${process.env.PUBLIC_URL}/assets/showcase${showcaseItem.src}`}
                       loading="lazy"
                       alt={`${showcaseItem.alt}`}
                     />
@@ -88,7 +88,7 @@ export class SlidEr extends React.Component<ISlidErProps> {
                     rel="noreferrer"
                   >
                     <img
-                      src={`${process.env.PUBLIC_URL}/showcase${showcaseItem.src}`}
+                      src={`${process.env.PUBLIC_URL}/assets/showcase${showcaseItem.src}`}
                       loading="lazy"
                       alt={`${showcaseItem.alt}`}
                     />
