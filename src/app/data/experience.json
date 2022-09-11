@@ -9,9 +9,11 @@
     },
     "location": "Mumbai, India",
     "summary": [
-      "Migrated template engine of web app from dust to glimmer.",
-      "Worked extensively in EmberJS to improve current features and add new features in a web app.",
-      "Plan estimate and develop new features from scratch."
+      "Migrated template engine of web app from Dust.js to Glimmer.js.",
+      "Worked extensively in EmberJS app with JAVA to improve current features and add new features.",
+      "Developed various solutions implementing concept of Service Workers and PWA.",
+      "Devised various Chrome Extension for internal usage to improve and streamline work and processes.",
+      "Strategize, estimate and develop new features from scratch."
     ]
   },
   {
@@ -24,10 +26,10 @@
     },
     "location": "Mumbai, India",
     "summary": [
-      "Migrated web app from Angular to React.",
+      "Migrated live web app from Angular to React with no downtime.",
       "Integrated Kendo UI and Fluent UI with React.",
-      "Refine back-end of Angular based web app with micro-service architecture.",
-      "Create and improve CI/CD pipelines for seamless deployments of Webapp and NuGet packages."
+      "Refine back-end of Angular based web app with micro-service architecture in C#.",
+      "Built and improved CI/CD pipelines for seamless deployments of Webapp and NuGet packages."
     ]
   },
   {
@@ -41,9 +43,9 @@
     "location": "Mumbai, India",
     "summary": [
       "Worked extensively on improving and adding new features and pages with cross browser compatibility to Angular based web app.",
-      "Refined and created micro-service architecture for the app.",
-      "Worked on creating extension for Azure DevOps and VS Code.",
-      "Unit testing and end-to-end testing, worked with Jasmine, protractor and selenium.",
+      "Refined and implemented micro-service architecture for the app.",
+      "Worked on developing extension for Azure DevOps and VS Code.",
+      "Unit testing and end-to-end testing, with Jasmine, protractor and selenium.",
       "Created a time critical and high impact Angular based web app (SPA) from scratch."
     ]
   }
