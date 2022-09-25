@@ -16,6 +16,7 @@ import { useState } from 'react';
 import { getGlobalStyles } from './app/styles/commonStyles';
 import { initializeIcons } from '@fluentui/font-icons-mdl2';
 import about from './app/data/about.json';
+import { scrollToTop } from './app/utils';
 
 const itemAlignmentsStackTokens: IStackTokens = {
   childrenGap: 16,
@@ -46,7 +47,7 @@ function App(): JSX.Element {
           <span
             className="vertical vl"
             onClick={(): void => {
-              window.scrollTo(0, 0);
+              scrollToTop();
             }}
           >
             {about.name}

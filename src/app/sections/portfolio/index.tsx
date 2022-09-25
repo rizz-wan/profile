@@ -1,10 +1,11 @@
 import { getTheme, Pivot, PivotItem, Stack } from '@fluentui/react';
 import * as React from 'react';
 import { MailForm, Pens, Projects } from '../../common';
-import { IPortfolio } from '../../model';
+import { IPortfolio, IProjectDetails } from '../../model';
 import { card, getPivotShadows, getShadows } from '../../styles/commonStyles';
-import { getSubPathName, subTabs, tabs } from '../../utils';
+import { getSubPathName, scrollToTop, subTabs, tabs } from '../../utils';
 import portfolio from '../../data/portfolio.json';
+import projectDetails from '../../data/projectDetails.json';
 
 interface IPortfolioState {
   selectedTab: string;
@@ -13,16 +14,18 @@ interface IPortfolioState {
 
 export class Portfolio extends React.Component<{}, IPortfolioState> {
   portfolio: IPortfolio;
+  projectDetails: IProjectDetails[];
   constructor(props: {}) {
     super(props);
-    window.scrollTo(0, 0);
-    const currentLocation = getSubPathName() ? getSubPathName() : subTabs[1];
+    scrollToTop();
+    const currentLocation = getSubPathName() ? getSubPathName() : subTabs[0];
     this.state = {
       selectedTab: currentLocation,
       currentPath: currentLocation,
     };
     window.history.replaceState(null, '', `/${tabs[2]}/${currentLocation}`);
     this.portfolio = portfolio;
+    this.projectDetails = projectDetails;
   }
 
   componentDidUpdate() {
@@ -36,7 +39,18 @@ export class Portfolio extends React.Component<{}, IPortfolioState> {
   }
 
   onTabChange = (item?: PivotItem): void => {
+    scrollToTop();
     const currentTab = item?.props.itemKey as string;
+    if (this.state.selectedTab !== currentTab) {
+      this.setState({ selectedTab: currentTab, currentPath: currentTab });
+      window.history.pushState(null, '', `/${tabs[2]}/${currentTab}`);
+      window.history.replaceState(null, '', `/${tabs[2]}/${currentTab}`);
+    }
+  };
+
+  onTabChangeToPen = (): void => {
+    scrollToTop();
+    const currentTab = subTabs[1];
     if (this.state.selectedTab !== currentTab) {
       this.setState({ selectedTab: currentTab, currentPath: currentTab });
       window.history.pushState(null, '', `/${tabs[2]}/${currentTab}`);
@@ -62,9 +76,12 @@ export class Portfolio extends React.Component<{}, IPortfolioState> {
               <PivotItem
                 headerText={this.portfolio.projectsText}
                 itemKey={subTabs[0]}
-                itemCount={0}
+                itemCount={this.projectDetails.length}
               >
-                <Projects />
+                <Projects
+                  projectDetails={this.projectDetails}
+                  onTabChange={this.onTabChangeToPen}
+                />
               </PivotItem>
               <PivotItem
                 headerText={this.portfolio.pens}
@@ -76,7 +93,8 @@ export class Portfolio extends React.Component<{}, IPortfolioState> {
             </Pivot>
           </Stack.Item>
         </Stack>
-        <MailForm />
+        {!this.projectDetails.length &&
+          !(this.state.selectedTab === subTabs[1]) && <MailForm />}
       </>
     );
   }

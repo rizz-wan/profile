@@ -11,6 +11,7 @@ import {
   GithubIcon,
 } from '../../common';
 import { card, getShadows } from '../../styles/commonStyles';
+import { scrollToTop } from '../../utils';
 
 interface IAllProps {
   onThemeChange: () => void;
@@ -20,7 +21,7 @@ interface IAllProps {
 export class All extends React.Component<IAllProps> {
   constructor(props: IAllProps) {
     super(props);
-    window.scrollTo(0, 0);
+    scrollToTop();
   }
   public componentDidMount(): void {
     const skillCloud = document.getElementsByClassName('skill-cloud')[0];

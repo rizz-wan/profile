@@ -62,36 +62,43 @@
     ],
     "projects": [
       {
+        "id": 1,
         "link": "https://github.com/rizz-wan/PanX",
         "src": "/panX.png",
         "alt": ""
       },
       {
+        "id": 2,
         "link": "https://geek.irizwan.com/",
         "src": "/tow.png",
         "alt": ""
       },
       {
+        "id": 3,
         "link": "https://rizz-wan.github.io/high-light/",
         "src": "/highLight.png",
         "alt": ""
       },
       {
+        "id": 4,
         "link": "https://rizz-wan.github.io/navlet/",
         "src": "/navlet.png",
         "alt": ""
       },
       {
+        "id": 5,
         "link": "https://mocktail.vercel.app/",
         "src": "/mocktail.png",
         "alt": ""
       },
       {
+        "id": 6,
         "link": "https://github.com/rizz-wan/LinkX",
         "src": "/linkX.png",
         "alt": ""
       },
       {
+        "id": 7,
         "link": "https://www.irizwan.com/all",
         "src": "/irizwan.png",
         "alt": ""

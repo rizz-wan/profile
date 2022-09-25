@@ -6,13 +6,13 @@ import {
   GithubIcon,
   Job,
   LinkedInIcon,
-  MailForm,
   MailIcon,
   ProfileCard,
 } from '../../common';
 import { card, getShadows } from '../../styles/commonStyles';
 import { IAbout } from '../../model';
 import about from '../../data/about.json';
+import { scrollToTop } from '../../utils';
 
 interface IAboutProps {
   onThemeChange: () => void;
@@ -22,7 +22,7 @@ export class About extends React.Component<IAboutProps> {
   about: IAbout;
   constructor(props: IAboutProps) {
     super(props);
-    window.scrollTo(0, 0);
+    scrollToTop();
     this.about = about;
   }
   breakpointColumnsObjSmall = {
@@ -54,7 +54,6 @@ export class About extends React.Component<IAboutProps> {
         </Masonry>
         <ProfileCard hideFooter />
         <Job isDetailedView />
-        <MailForm />
       </>
     );
   }

@@ -3,11 +3,12 @@ import * as React from 'react';
 import loader from '../../assets/img/loader.gif';
 import { MailForm } from '../../common';
 import { card, getShadows } from '../../styles/commonStyles';
+import { scrollToTop } from '../../utils';
 
 export class Blog extends React.Component {
   constructor(props: {}) {
     super(props);
-    window.scrollTo(0, 0);
+    scrollToTop();
   }
   render(): JSX.Element {
     const theme = getTheme();

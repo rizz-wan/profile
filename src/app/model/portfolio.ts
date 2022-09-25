@@ -7,6 +7,6 @@ export interface IPortfolio {
   pens: string;
   showcase: {
     pens: { link: string; src: string; alt: string }[];
-    projects: { link: string; src: string; alt: string }[];
+    projects: { id: number; link: string; src: string; alt: string }[];
   };
 }
