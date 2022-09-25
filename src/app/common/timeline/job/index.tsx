@@ -77,7 +77,7 @@ export class Job extends React.Component<ITimelineProps> {
       <div
         className={`${card} card ${getShadows(
           theme
-        )} timeline-card ${getExternalLinkStyles(theme)}`}
+        )} timeline-card ${getExternalLinkStyles(theme)} a-d1`}
       >
         <h3>{this.common.experience}</h3>
         <div

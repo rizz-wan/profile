@@ -51,7 +51,7 @@ export class ShowCase extends React.Component<IShowCaseProps, IShowCaseState> {
     const theme = getTheme();
 
     return (
-      <div className={`${card} card ${getShadows(theme)} show-case d-block`}>
+      <div className={`${card} card ${getShadows(theme)} show-case d-block a-d2`}>
         <Stack>
           <StackItem align="center">
             <h1>{this.common.works}</h1>

@@ -45,7 +45,9 @@ export class ButtonCard extends React.Component<IButtonCardProps> {
 
     return (
       <div
-        className={`${card} card ${getShadows(theme)} theme-button-container`}
+        className={`${card} card ${getShadows(
+          theme
+        )} theme-button-container a-d3`}
       >
         <div
           onClick={handleClick}

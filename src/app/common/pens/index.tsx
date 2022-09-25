@@ -37,8 +37,8 @@ export class Pens extends React.Component {
             className="my-masonry-grid pens"
             columnClassName="my-masonry-grid_column"
           >
-            {this.pens.otherPens.map((hash) => {
-              return <PenIFrame key={hash} hash={hash} />;
+            {this.pens.otherPens.map((hash, i) => {
+              return <PenIFrame key={hash} hash={hash} ad={`a-d${i + 1}`} />;
             })}
             {this.pens.otherPens.length % 2 !== 0 && (
               <div className={`${card} card ${getShadows(theme)} p-1`}>

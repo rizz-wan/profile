@@ -8,6 +8,7 @@ interface IPenIFrameState {
 
 interface IPenIFrameProps {
   hash: string;
+  ad?: string;
 }
 
 export class PenIFrame extends React.Component<
@@ -29,7 +30,7 @@ export class PenIFrame extends React.Component<
     const theme = getTheme();
 
     return (
-      <div className={`${card} card ${getShadows(theme)} p-1`}>
+      <div className={`${card} card ${getShadows(theme)} p-1 ${this.props.ad}`}>
         {!this.state.iFrameLoaded && (
           <Spinner className="iframe-loader" size={SpinnerSize.large} />
         )}

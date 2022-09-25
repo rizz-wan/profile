@@ -17,7 +17,7 @@ export class MailIcon extends React.Component {
     const theme: ITheme = getTheme();
 
     return (
-      <div className={`${card} card ${getShadows(theme)} icon-container`}>
+      <div className={`${card} card ${getShadows(theme)} icon-container a-d1`}>
         <img
           className={`icon ${getImageFilter(theme)}`}
           height="100px"
