@@ -7,3 +7,4 @@ export * from './timeline';
 export * from './mailForm';
 export * from './showCase';
 export * from './textRenderer';
+export * from './dumbFooter';

@@ -1,7 +1,7 @@
 import { getTheme } from '@fluentui/react';
 import * as React from 'react';
 import loader from '../../assets/img/loader.gif';
-import { MailForm } from '../../common';
+import { DumbFooter, MailForm } from '../../common';
 import { card, getShadows } from '../../styles/commonStyles';
 import { scrollToTop } from '../../utils';
 
@@ -22,6 +22,8 @@ export class Blog extends React.Component {
             </div>
           </div>
         </div>
+        <DumbFooter />
+        <br />
         <MailForm />
       </>
     );

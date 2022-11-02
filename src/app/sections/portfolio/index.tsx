@@ -1,6 +1,6 @@
 import { getTheme, Pivot, PivotItem, Stack } from '@fluentui/react';
 import * as React from 'react';
-import { MailForm, Pens, Projects } from '../../common';
+import { DumbFooter, MailForm, Pens, Projects } from '../../common';
 import { IPortfolio, IProjectDetails } from '../../model';
 import { card, getPivotShadows, getShadows } from '../../styles/commonStyles';
 import { getSubPathName, scrollToTop, subTabs, tabs } from '../../utils';
@@ -93,8 +93,14 @@ export class Portfolio extends React.Component<{}, IPortfolioState> {
             </Pivot>
           </Stack.Item>
         </Stack>
+        <DumbFooter />
         {!this.projectDetails.length &&
-          !(this.state.selectedTab === subTabs[1]) && <MailForm />}
+          !(this.state.selectedTab === subTabs[1]) && (
+            <>
+              <br />
+              <MailForm />
+            </>
+          )}
       </>
     );
   }

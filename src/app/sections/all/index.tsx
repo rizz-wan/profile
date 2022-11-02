@@ -9,6 +9,7 @@ import {
   ShowCase,
   LinkedInIcon,
   GithubIcon,
+  DumbFooter,
 } from '../../common';
 import { card, getShadows } from '../../styles/commonStyles';
 import { scrollToTop } from '../../utils';
@@ -62,6 +63,8 @@ export class All extends React.Component<IAllProps> {
             </div>
           </div>
         </div>
+        <DumbFooter />
+        <br />
         <MailForm />
       </>
     );

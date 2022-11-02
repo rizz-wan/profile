@@ -3,6 +3,7 @@ import * as React from 'react';
 import Masonry from 'react-masonry-css';
 import {
   ButtonCard,
+  DumbFooter,
   GithubIcon,
   Job,
   LinkedInIcon,
@@ -54,6 +55,7 @@ export class About extends React.Component<IAboutProps> {
         </Masonry>
         <ProfileCard hideFooter />
         <Job isDetailedView />
+        <DumbFooter />
       </>
     );
   }
