@@ -7,7 +7,8 @@
     background-size: cover;
     margin-top: -48px;
     background-position: center;
-    border-radius: 8px;
+    border-radius: 13px;
+    box-shadow: 0 0 0 1px var(--neutralQuaternary);
   }
 
   .heading,
@@ -15,11 +16,12 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    padding: 0 4px;
   }
 
   .heading {
-    -webkit-line-clamp: 2;
-    height: 48px;
+    -webkit-line-clamp: 1;
+    height: 24px;
     cursor: pointer;
     color: var(--themePrimary);
     span {
@@ -34,14 +36,20 @@
       }
     }
     &:after {
-      content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+      content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAbUlEQVQYV2NkwAGMjY3/I0sxogucPXuWEabA1NQ04d+/f/NBfLBCZEl0RUxMTIkgxVgVwkwCKTp9+vQCkGEYCtEVwWxAUWhhYaHw+/fv+zCTMDyD7EaQ4hMnTjyAKYL5AadnKFOIK9Bh4iCnAQCQ91xr2Cv0sgAAAABJRU5ErkJggg==);
       margin: 0 3px 0 5px;
+    }
+  }
+
+  .isInverted {
+    &:after {
+      filter: invert(1);
     }
   }
 
   .description {
     -webkit-line-clamp: 4;
-    height: 84px;
+    height: 76px;
   }
 
   .footerButton {
@@ -85,5 +93,13 @@
       text-decoration: underline;
       cursor: pointer;
     }
+  }
+}
+.panel {
+  .ms-Panel-content {
+    overflow: hidden;
+  }
+  .panel-image {
+    max-height: 250px;
   }
 }

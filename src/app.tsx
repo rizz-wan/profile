@@ -11,7 +11,12 @@ import {
   Stack,
   ThemeProvider,
 } from '@fluentui/react';
-import { darkTheme, lightTheme } from './app/components/theme/theme';
+import {
+  darkTheme,
+  isInvertedTheme,
+  lightTheme,
+  setInitialThemeClassToBody,
+} from './app/components/theme/theme';
 import { useState } from 'react';
 import { getGlobalStyles } from './app/styles/commonStyles';
 import { initializeIcons } from '@fluentui/font-icons-mdl2';
@@ -26,10 +31,14 @@ const itemAlignmentsStackTokens: IStackTokens = {
 function App(): JSX.Element {
   initializeIcons();
 
-  const [darkMode, setUseDarkMode] = useState(false);
+  setInitialThemeClassToBody();
+
+  const [darkMode, setUseDarkMode] = useState(isInvertedTheme);
 
   function onThemeChange(): void {
     setUseDarkMode(!darkMode);
+    document.body.classList.toggle('light');
+    document.body.classList.toggle('dark');
   }
 
   return (

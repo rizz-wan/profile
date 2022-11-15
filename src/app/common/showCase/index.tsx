@@ -20,6 +20,7 @@ import portfolio from '../../data/portfolio.json';
 
 interface IShowCaseProps {
   onTabChange?: (currentTab: string) => void;
+  isMinVersion?: boolean;
 }
 
 interface IShowCaseState {
@@ -51,15 +52,21 @@ export class ShowCase extends React.Component<IShowCaseProps, IShowCaseState> {
     const theme = getTheme();
 
     return (
-      <div className={`${card} card ${getShadows(theme)} show-case d-block a-d2`}>
-        <Stack>
-          <StackItem align="center">
-            <h1>{this.common.works}</h1>
-          </StackItem>
-          <StackItem align="center">
-            <p className="sub-text">{this.common.worksSubheader}</p>
-          </StackItem>
-        </Stack>
+      <div
+        className={`${card} card ${getShadows(theme)} show-case d-block a-d2 ${
+          this.props.isMinVersion ? 'p-1' : ''
+        }`}
+      >
+        {!this.props.isMinVersion && (
+          <Stack>
+            <StackItem align="center">
+              <h1>{this.common.works}</h1>
+            </StackItem>
+            <StackItem align="center">
+              <p className="sub-text">{this.common.worksSubheader}</p>
+            </StackItem>
+          </Stack>
+        )}
         <SlidEr
           incrementor={0.2}
           id="1"
@@ -74,39 +81,41 @@ export class ShowCase extends React.Component<IShowCaseProps, IShowCaseState> {
           showcase={this.portfolio.showcase.projects}
           cta={this.common.seeLive}
         />
-        <Stack horizontal horizontalAlign="space-between" className="m-t-2">
-          <span></span>
-          <Stack horizontal className="custom-button-container">
-            <span
-              className={`${getShadows(
-                theme
-              )} custom-button  active-button ${getBackgroundColor(theme)}`}
-              onClick={() => {
-                this.props.onTabChange?.(tabs[2]);
-              }}
-            >
-              <FontIcon
-                aria-label="View"
-                iconName="View"
-                className="custom-button-icon"
+        {!this.props.isMinVersion && (
+          <Stack horizontal horizontalAlign="space-between" className="m-t-2">
+            <span></span>
+            <Stack horizontal className="custom-button-container">
+              <span
+                className={`${getShadows(
+                  theme
+                )} custom-button  active-button ${getBackgroundColor(theme)}`}
+                onClick={() => {
+                  this.props.onTabChange?.(tabs[2]);
+                }}
+              >
+                <FontIcon
+                  aria-label="View"
+                  iconName="View"
+                  className="custom-button-icon"
+                />
+                {this.common.seeAll}
+              </span>
+            </Stack>
+            <Stack horizontal className="custom-button-container">
+              <IconButton
+                iconProps={{
+                  iconName: this.state.shouldPause ? 'Pause' : 'Play',
+                }}
+                title={this.state.shouldPause ? 'Pause' : 'Play'}
+                ariaLabel={this.state.shouldPause ? 'Pause' : 'Play'}
+                className={`${getShadows(
+                  theme
+                )} active-button ${getBackgroundColor(theme)}`}
+                onClick={this.handleSlide}
               />
-              {this.common.seeAll}
-            </span>
+            </Stack>
           </Stack>
-          <Stack horizontal className="custom-button-container">
-            <IconButton
-              iconProps={{
-                iconName: this.state.shouldPause ? 'Pause' : 'Play',
-              }}
-              title={this.state.shouldPause ? 'Pause' : 'Play'}
-              ariaLabel={this.state.shouldPause ? 'Pause' : 'Play'}
-              className={`${getShadows(
-                theme
-              )} active-button ${getBackgroundColor(theme)}`}
-              onClick={this.handleSlide}
-            />
-          </Stack>
-        </Stack>
+        )}
       </div>
     );
   }

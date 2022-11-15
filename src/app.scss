@@ -2,6 +2,8 @@
 @import './app/styles/border.scss';
 @import './app/styles/variables.scss';
 @import './app/styles/generics.scss';
+@import './app/components/theme/light.scss';
+@import './app/components/theme/dark.scss';
 
 .container {
   width: 100%;
@@ -78,21 +80,17 @@
   .is-selected {
     background-color: transparent;
   }
-  .ms-Pivot-text,
-  .ms-Pivot-count {
-    vertical-align: text-top;
-  }
   .ms-Pivot-link {
-    @include single-motion-bottom(2px, #0078d4);
+    @include single-motion-bottom(2px, var(--themePrimary));
   }
   .is-selected {
     * {
-      color: #0078d4;
+      color: var(--themePrimary);
     }
   }
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
   display: flex;
   margin: 8px;
   .ms-Button {
@@ -105,9 +103,6 @@
   position: fixed;
   transform: rotate(180deg) !important;
   font-size: 15px;
-  .link {
-    color: #0078d4;
-  }
 }
 
 .vl {
@@ -129,6 +124,7 @@
 .ms-Panel-main {
   margin: 16px;
   border-radius: $border-radius;
+  color: var(--black);
   @media (max-width: 480px) {
     width: 90%;
   }
@@ -148,7 +144,7 @@
     border-radius: $border-radius;
     display: flex;
     align-items: flex-end;
-    @include single-motion-bottom(2px, #0078d4);
+    @include single-motion-bottom(2px, var(--themePrimary));
     .custom-button-icon {
       margin-right: 4px;
     }
@@ -216,5 +212,32 @@ iframe {
   100% {
     transform: translate3d(0, 0, 0) rotateY(0deg);
     opacity: 1;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--neutralTertiaryAlt);
+  border: 2px solid var(--white);
+  border-radius: 24px;
+  &:hover {
+    background: var(--neutralTertiary);
+  }
+  &:active {
+    background: var(--neutralSecondary);
+  }
+}
+
+.contribution-grid-con {
+  min-height: 150px;
+  .contribution-grid {
+    object-fit: cover;
   }
 }

@@ -28,7 +28,7 @@ export class ProjectCard extends Component<IProjectCardProps> {
     const data = this.props.data as IProjectDetails;
 
     return (
-      <div className={`${card} card ${getShadows(theme)} projectCard p-2`}>
+      <div className={`${card} card ${getShadows(theme)} projectCard p-1`}>
         <Stack horizontal horizontalAlign="end">
           <IconButton
             className={getActionStyles(this.props.theme)}
@@ -41,7 +41,7 @@ export class ProjectCard extends Component<IProjectCardProps> {
           className={`${getImageContainerStyles(data.img)} image-container`}
         ></div>
         <div
-          className="heading m-t-3"
+          className={`heading m-t-3 ${theme.isInverted ? 'isInverted' : ''}`}
           title={data.heading}
           onClick={() => {
             this.onRoute('/wall');
@@ -51,12 +51,12 @@ export class ProjectCard extends Component<IProjectCardProps> {
             <strong>{data.heading}</strong>
           </Text>
         </div>
-        <div className="description m-t-2">
+        <div className="description">
           <Text title={data.description}>{data.description}</Text>
         </div>
         <Stack horizontal className="custom-button-container">
           <Stack.Item grow> </Stack.Item>
-          <Stack.Item>
+          <Stack.Item className="p-1">
             <span
               className={`${getShadows(theme)} custom-button active-button`}
               onClick={() => this.props.onQuickView(data)}

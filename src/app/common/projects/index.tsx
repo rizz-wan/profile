@@ -62,13 +62,18 @@ export class Projects extends React.Component<IProjectProps, IProjectsState> {
     return (
       <div className="projects">
         <Panel
-          className={`${getPanelShadows(theme)}`}
-          type={PanelType.large}
+          className={`${getPanelShadows(theme)} panel`}
+          type={PanelType.medium}
           headerText={this.state.selectedProjectDetails?.heading}
           isOpen={this.state.isPanelOpen}
           closeButtonAriaLabel="Close"
           onDismiss={this.handlePanelClose}
         >
+          <img
+            alt={this.state.selectedProjectDetails?.heading}
+            className="panel-image m-t-2"
+            src={this.state.selectedProjectDetails?.img}
+          />
           <p>{this.state.selectedProjectDetails?.description}</p>
         </Panel>
         <div className="ms-Grid" dir="ltr">

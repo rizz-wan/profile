@@ -42,7 +42,7 @@ export class Header extends React.Component<IHeaderProps> {
               itemKey={tabs[2]}
             ></PivotItem>
             <PivotItem
-              headerText={this.common.tabsNames[3]}
+              itemIcon='AppIconDefaultList'
               itemKey={tabs[3]}
             ></PivotItem>
           </Pivot>

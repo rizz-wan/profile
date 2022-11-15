@@ -36,13 +36,12 @@ export class PenIFrame extends React.Component<
         )}
         <iframe
           scrolling="no"
-          title="Naive email validator"
+          title="Pen from Rizwan"
           src={`https://codepen.io/rizz-wan/embed/${
             this.props.hash
           }?default-tab=result&theme-id=${theme.isInverted ? 'dark' : 'light'}`}
           frameBorder="no"
           loading="lazy"
-          allowFullScreen={true}
           className={this.state.iFrameLoaded ? '' : 'd-hidden'}
           onLoad={() => {
             this.handleFrame();

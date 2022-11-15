@@ -30,10 +30,6 @@ export class About extends React.Component<IAboutProps> {
     default: 4,
     767: 1,
   };
-  breakpointColumnsObj = {
-    default: 2,
-    500: 1,
-  };
 
   render(): JSX.Element {
     const theme = getTheme();

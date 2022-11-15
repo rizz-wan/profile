@@ -37,15 +37,19 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
         className={`${card} card ${getShadows(
           theme
         )} profile ${getExternalLinkStyles(theme)} ${
-          this.props.hideFooter ? 'a-d4' : ''
+          this.props.hideFooter ? 'a-d4 m-t-13' : ''
         }`}
       >
-        <img
-          className={getDropShadow(theme)}
-          height="100px"
-          src={this.props.hideFooter ? star : main}
-          alt="me"
-        />
+        <div className={`image-container ${getShadows(theme)}`}>
+          <img
+            className={`${getDropShadow(theme)} ${
+              !this.props.hideFooter ? 'short' : 'detailed'
+            }`}
+            height="100px"
+            src={this.props.hideFooter ? star : main}
+            alt="me"
+          />
+        </div>
         {this.props.hideFooter && (
           <>
             {<TextRenderer data={this.about.about[0]}></TextRenderer>}

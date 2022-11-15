@@ -3,6 +3,7 @@
   "education": "Education",
   "works": "Works",
   "quickThought": "Quick thought...",
+  "quickThoughtAlt": "Any closing thoughts?",
   "mailPlaceholder": "Write a message/feedback/thought/suggestion, I’m all ears.",
   "mailSuccess": "Noted! Thank you for your kind words, will reach out to you soon :)",
   "mailError": "Oops, something went wrong :(",

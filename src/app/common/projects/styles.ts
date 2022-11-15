@@ -13,7 +13,7 @@ export const getActionStyles = (theme: ITheme): string =>
     margin: '8px',
     WebkitBackdropFilter: 'blur(8px)',
     backdropFilter: 'blur(8px)',
-    border: `1px solid ${theme.palette.black}`,
+    border: `1px solid ${theme.isInverted ? '#3a3a3a' : '#d1d9e6'}`,
     background: !theme.isInverted
       ? 'rgba(255,255,255,0.8)'
       : 'rgba(34,34,34,0.8)',

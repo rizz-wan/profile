@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "img": "/assets/showcase/panX.png",
+    "heading": "PanX",
+    "description": "A chrome extension boilerplate to inject an iframe panel to a webpage."
+  },
+  {
+    "img": "/assets/showcase/tow.png",
+    "heading": "TOW:Terminal On Web",
+    "description": "A fun terminal style portfolio site."
+  },
+  {
+    "img": "/assets/showcase/highLight.png",
+    "heading": "High-light",
+    "description": "A cross-browser library of CSS to highlight your content."
+  },
+  {
+    "img": "/assets/showcase/navlet.png",
+    "heading": "Navlet",
+    "description": "Add scroll to top button on any page."
+  },
+  {
+    "img": "/assets/showcase/mocktail.png",
+    "heading": "Mocktail",
+    "description": "An awesome react template with first class configuration for highly scalable, easily maintainable and highly performant react applications, easily maintainable and highly performant react applications."
+  },
+  {
+    "img": "/assets/showcase/linkX.png",
+    "heading": "LinkX",
+    "description": "Powerful extension to show all anchor links and emails on the page."
+  },
+  {
+    "img": "/assets/showcase/irizwan.png",
+    "heading": "Portfolio",
+    "description": "This is my website :)."
+  }
+]

@@ -1,0 +1,28 @@
+/*Keep theme.ts and this file in sync*/
+/*Class name is one of the keys of ThemeModes enum in theme.ts*/
+.dark {
+  --fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif";
+  --themePrimary: #70c1ff;
+  --themeLighterAlt: #04080a;
+  --themeLighter: #121f29;
+  --themeLight: #223a4d;
+  --themeTertiary: #437499;
+  --themeSecondary: #63aae0;
+  --themeDarkAlt: #7ec7ff;
+  --themeDark: #92d0ff;
+  --themeDarker: #afdcff;
+  --neutralLighterAlt: #454545;
+  --neutralLighter: #444444;
+  --neutralLight: #424242;
+  --neutralQuaternaryAlt: #3d3d3d;
+  --neutralQuaternary: #3a3a3a;
+  --neutralTertiaryAlt: #383838;
+  --neutralTertiary: #eeeff3;
+  --neutralSecondary: #f1f1f5;
+  --neutralPrimaryAlt: #f4f4f7;
+  --neutralPrimary: #e6e7ee;
+  --neutralDark: #f9f9fb;
+  --black: #fcfcfd;
+  --white: #474747;
+  --cardShadowHovered: #2e2e2e;
+}

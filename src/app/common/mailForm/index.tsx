@@ -23,9 +23,13 @@ interface IMailFormState {
   name: string;
 }
 
-export class MailForm extends React.Component<{}, IMailFormState> {
+interface IMailFormProps {
+  isOnLastTab?: boolean;
+}
+
+export class MailForm extends React.Component<IMailFormProps, IMailFormState> {
   common: ICommon;
-  constructor(props: IMailFormState) {
+  constructor(props: IMailFormProps) {
     super(props);
     this.state = {
       pageHasError: false,
@@ -119,7 +123,11 @@ export class MailForm extends React.Component<{}, IMailFormState> {
             {this.common.mailSuccess}
           </MessageBar>
         )}
-        <h3>{this.common.quickThought}</h3>
+        <h3>
+          {this.props.isOnLastTab
+            ? this.common.quickThoughtAlt
+            : this.common.quickThought}
+        </h3>
         <TextField
           multiline
           resizable={false}

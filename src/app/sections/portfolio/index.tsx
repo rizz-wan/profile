@@ -1,6 +1,6 @@
 import { getTheme, Pivot, PivotItem, Stack } from '@fluentui/react';
 import * as React from 'react';
-import { DumbFooter, MailForm, Pens, Projects } from '../../common';
+import { DumbFooter, MailForm, Pens, Projects, ShowCase } from '../../common';
 import { IPortfolio, IProjectDetails } from '../../model';
 import { card, getPivotShadows, getShadows } from '../../styles/commonStyles';
 import { getSubPathName, scrollToTop, subTabs, tabs } from '../../utils';
@@ -39,7 +39,6 @@ export class Portfolio extends React.Component<{}, IPortfolioState> {
   }
 
   onTabChange = (item?: PivotItem): void => {
-    scrollToTop();
     const currentTab = item?.props.itemKey as string;
     if (this.state.selectedTab !== currentTab) {
       this.setState({ selectedTab: currentTab, currentPath: currentTab });
@@ -67,6 +66,7 @@ export class Portfolio extends React.Component<{}, IPortfolioState> {
           <div className={`${card} card ${getShadows(theme)}`}>
             {this.portfolio.portfolioSubheader}
           </div>
+          <ShowCase isMinVersion />
           <Stack.Item align="center" className="w-100 sub-pivot">
             <Pivot
               className={`${getPivotShadows(theme)} ms-motion-slideUpIn`}

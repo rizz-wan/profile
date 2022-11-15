@@ -56,7 +56,7 @@ export class LandingPage extends React.Component<
       case tabs[2]:
         return <Portfolio />;
       case tabs[3]:
-        return <Blog />;
+        return <Blog onThemeChange={this.props.onThemeChange} />;
 
       default:
         return <></>;

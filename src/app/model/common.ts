@@ -3,6 +3,7 @@ export interface ICommon {
   education: string;
   works: string;
   quickThought: string;
+  quickThoughtAlt: string;
   mailPlaceholder: string;
   mailSuccess: string;
   mailError: string;

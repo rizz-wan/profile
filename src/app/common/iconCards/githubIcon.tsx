@@ -25,7 +25,8 @@ export class GithubIcon extends React.Component {
     return (
       <div
         className={`${card} card ${getShadows(
-          theme
+          theme,
+          true
         )} bg-white icon-container github-icon animation-none`}
       >
         <img

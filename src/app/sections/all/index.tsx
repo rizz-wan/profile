@@ -47,7 +47,8 @@ export class All extends React.Component<IAllProps> {
                 <ButtonCard onThemeChange={this.props.onThemeChange} />
                 <div
                   className={`${card} card ${getShadows(
-                    theme
+                    theme,
+                    true
                   )} bg-white skill-cloud animation-none`}
                 ></div>
               </div>

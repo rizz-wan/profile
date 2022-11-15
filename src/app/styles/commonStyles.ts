@@ -8,17 +8,29 @@ export const card: string = mergeStyles({
   animationDuration: `${MotionDurations.duration4} !important`,
 });
 
-export const getShadows = (theme: ITheme): string =>
+export const getShadows = (theme: ITheme, isBgWhite = false): string =>
   mergeStyles({
-    boxShadow: `${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${theme.semanticColors.cardShadowHovered}, -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${theme.semanticColors.cardShadow} !important`,
+    boxShadow: `${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${
+      theme.semanticColors.cardShadowHovered
+    }, -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${
+      theme.semanticColors.cardShadow
+    }${
+      isBgWhite
+        ? ''
+        : `, inset 0 0 0 1px ${theme.isInverted ? '#3a3a3a' : '#d1d9e6'}`
+    } !important`,
     '.active-button:active': {
-      boxShadow: `inset ${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${theme.semanticColors.cardShadowHovered},inset -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${theme.semanticColors.cardShadow} !important`,
+      boxShadow: `inset ${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${
+        theme.semanticColors.cardShadowHovered
+      },inset -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${
+        theme.semanticColors.cardShadow
+      }, 0 0 0 1px ${theme.isInverted ? '#3a3a3a' : '#d1d9e6'} !important`,
     },
   });
 
 export const getDropShadow = (theme: ITheme): string =>
   mergeStyles({
-    filter: `drop-shadow(${shadowDisplacement} ${shadowDisplacement} 3px ${theme.semanticColors.cardShadowHovered}) drop-shadow(-${shadowDisplacement} -${shadowDisplacement} 3px ${theme.semanticColors.cardShadow})`,
+    filter: `drop-shadow(${shadowDisplacement} ${shadowDisplacement} 3px ${theme.semanticColors.cardShadowHovered})`,
   });
 
 export const getPanelShadows = (theme: ITheme): string =>
@@ -28,9 +40,19 @@ export const getPanelShadows = (theme: ITheme): string =>
       opacity: '0.75 !important',
     },
     '.ms-Panel-main,.ms-Button': {
-      boxShadow: `${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${theme.semanticColors.cardShadowHovered}, -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${theme.semanticColors.cardShadow} !important`,
+      boxShadow: `${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${
+        theme.semanticColors.cardShadowHovered
+      }, -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${
+        theme.semanticColors.cardShadow
+      }, inset 0 0 0 1px ${
+        theme.isInverted ? '#3a3a3a' : '#d1d9e6'
+      } !important`,
       '.ms-Button:hover': {
-        boxShadow: `inset ${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${theme.semanticColors.cardShadowHovered},inset -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${theme.semanticColors.cardShadow} !important`,
+        boxShadow: `inset ${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${
+          theme.semanticColors.cardShadowHovered
+        },inset -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${
+          theme.semanticColors.cardShadow
+        },0 0 0 1px ${theme.isInverted ? '#3a3a3a' : '#d1d9e6'}  !important`,
       },
     },
   });
@@ -50,10 +72,20 @@ export const getGlobalStyles = (theme: ITheme): string =>
 export const getPivotShadows = (theme: ITheme): string =>
   mergeStyles({
     '.ms-Pivot': {
-      boxShadow: `${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${theme.semanticColors.cardShadowHovered}, -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${theme.semanticColors.cardShadow} !important`,
+      boxShadow: `${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${
+        theme.semanticColors.cardShadowHovered
+      }, -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${
+        theme.semanticColors.cardShadow
+      }, inset 0 0 0 1px ${
+        theme.isInverted ? '#3a3a3a' : '#d1d9e6'
+      } !important`,
     },
     '.is-selected': {
-      boxShadow: `inset 2px 2px 5px ${theme.semanticColors.cardShadowHovered}, inset -3px -3px 7px ${theme.semanticColors.cardShadow} !important;`,
+      boxShadow: `inset 2px 2px 5px ${
+        theme.semanticColors.cardShadowHovered
+      }, inset -3px -3px 7px ${theme.semanticColors.cardShadow}, 0 0 0 1px ${
+        theme.isInverted ? '#3a3a3a' : '#d1d9e6'
+      } !important;`,
     },
   });
 

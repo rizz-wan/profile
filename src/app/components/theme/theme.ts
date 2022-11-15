@@ -62,3 +62,15 @@ export const darkTheme = {
     cardShadowHovered: '#2e2e2e',
   },
 };
+
+export const isInvertedTheme =
+  window.matchMedia &&
+  window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+export function setInitialThemeClassToBody() {
+  let documentClassList = document.body.classList;
+  if (
+    !(documentClassList.contains('dark') || documentClassList.contains('light'))
+  )
+    documentClassList.add(isInvertedTheme ? 'dark' : 'light');
+}

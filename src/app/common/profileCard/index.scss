@@ -3,9 +3,28 @@
 .profile {
   background-image: url('../../assets/img/bg2.png');
   display: block !important;
+  padding-top: 60px !important;
+  margin-top: 40px;
   .name {
     @extend .decorated-text;
     line-height: 14px;
     font-size: 32px;
+  }
+  .image-container {
+    width: 100px;
+    margin-top: -104px;
+    float: left;
+    border-radius: 16px;
+    padding: 8px;
+    background: linear-gradient(to bottom, var(--themeTertiary), var(--white));
+    .short,
+    .detailed {
+      margin-left: -20px;
+      margin-right: 20px;
+    }
+    .detailed {
+      height: 116px;
+      margin-top: -20px;
+    }
   }
 }
