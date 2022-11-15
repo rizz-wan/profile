@@ -22,7 +22,7 @@ export class Header extends React.Component<IHeaderProps> {
   render(): JSX.Element {
     const theme = getTheme();
     return (
-      <Stack className="m-t-3">
+      <Stack className="header m-t-3">
         <Stack.Item align="center" className="w-100">
           <Pivot
             onLinkClick={this.handleTabChange}

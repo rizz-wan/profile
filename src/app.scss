@@ -241,3 +241,23 @@ iframe {
     object-fit: cover;
   }
 }
+.header {
+  .ms-Pivot-link:last-child {
+    background-image: linear-gradient(
+      to bottom right,
+      var(--themeTertiary),
+      var(--white)
+    );
+    margin-right: 4px;
+    &[class*='linkIsSelected'] {
+      box-shadow: inset 0 0 0px 2px var(--themePrimary) !important;
+    }
+    * {
+      font-family: 'FabricMDL2Icons-8';
+      font-size: 18px;
+    }
+    &::before {
+      display: none;
+    }
+  }
+}
