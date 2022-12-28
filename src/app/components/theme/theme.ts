@@ -48,13 +48,13 @@ export const darkTheme = {
     neutralQuaternaryAlt: '#3d3d3d',
     neutralQuaternary: '#3a3a3a',
     neutralTertiaryAlt: '#383838',
-    neutralTertiary: '#eeeff3',
-    neutralSecondary: '#f1f1f5',
-    neutralSecondaryAlt: '#f1f1f5',
-    neutralPrimaryAlt: '#f4f4f7',
+    neutralTertiary: '#9a9b9f',
+    neutralSecondary: '#818185',
+    neutralSecondaryAlt: '#818185',
+    neutralPrimaryAlt: '#68686b',
     neutralPrimary: '#e6e7ee', //text
-    neutralDark: '#f9f9fb',
-    black: '#fcfcfd',
+    neutralDark: '#353537',
+    black: '#1c1c1c',
     white: '#474747', //background
   },
   semanticColors: {

@@ -80,6 +80,9 @@
   .is-selected {
     background-color: transparent;
   }
+  .ms-Pivot-link:hover {
+    color: var(--neutralPrimary);
+  }
   .ms-Pivot-link {
     @include single-motion-bottom(2px, var(--themePrimary));
   }
@@ -224,12 +227,9 @@ iframe {
 }
 
 *::-webkit-scrollbar-thumb {
-  background: var(--neutralTertiaryAlt);
+  background: var(--neutralTertiary);
   border: 2px solid var(--white);
   border-radius: 24px;
-  &:hover {
-    background: var(--neutralTertiary);
-  }
   &:active {
     background: var(--neutralSecondary);
   }
