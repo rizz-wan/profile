@@ -22,7 +22,7 @@ export class MailIcon extends React.Component {
           className={`icon ${getImageFilter(theme)}`}
           height="100px"
           src={mail}
-          alt="me"
+          alt="mail"
           onClick={() => {
             window.location.href = `mailto:${this.about.email}`;
           }}

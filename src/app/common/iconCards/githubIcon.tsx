@@ -33,7 +33,7 @@ export class GithubIcon extends React.Component {
           className={`icon ${getImageFilter(theme, true)}`}
           height="100px"
           src={github}
-          alt="me"
+          alt="github"
           onClick={() => {
             window.open(`${this.about.github}`, '_blank');
           }}

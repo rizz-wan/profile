@@ -22,7 +22,7 @@ export class LinkedInIcon extends React.Component {
           className={`icon ${getImageFilter(theme)}`}
           height="100px"
           src={linkedin}
-          alt="me"
+          alt="linkedin"
           onClick={() => {
             window.open(`${this.about.linkedIn}`, '_blank');
           }}

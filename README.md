@@ -6,7 +6,7 @@ This project is bootstrapped with [Create React App](https://github.com/facebook
 
 ## If you want to run this site locally
 
-### `https://github.com/rizz-wan/profile.git`
+### `https://github.com/irizwankhan/profile.git`
 
 Url to clone the project.
 
