@@ -2,36 +2,43 @@
   {
     "img": "/assets/showcase/panX.png",
     "heading": "PanX",
-    "description": "A chrome extension boilerplate to inject an iframe panel to a webpage."
+    "description": "A chrome extension boilerplate to inject an iframe panel to a webpage.",
+    "link": "https://github.com/irizwankhan/PanX"
   },
   {
     "img": "/assets/showcase/tow.png",
     "heading": "TOW:Terminal On Web",
-    "description": "A fun terminal style portfolio site."
+    "description": "A fun terminal style portfolio site.",
+    "link": "https://geek.irizwan.com/"
   },
   {
     "img": "/assets/showcase/highLight.png",
     "heading": "High-light",
-    "description": "A cross-browser library of CSS to highlight your content."
+    "description": "A cross-browser library of CSS to highlight your content.",
+    "link": "https://irizwankhan.github.io/high-light/"
   },
   {
     "img": "/assets/showcase/navlet.png",
     "heading": "Navlet",
-    "description": "Add scroll to top button on any page."
+    "description": "Add scroll to top button on any page.",
+    "link": "https://irizwankhan.github.io/navlet/"
   },
   {
     "img": "/assets/showcase/mocktail.png",
     "heading": "Mocktail",
-    "description": "An awesome react template with first class configuration for highly scalable, easily maintainable and highly performant react applications, easily maintainable and highly performant react applications."
+    "description": "An awesome react template with first class configuration for highly scalable, easily maintainable and highly performant react applications, easily maintainable and highly performant react applications.",
+    "link": "https://mocktail.vercel.app/"
   },
   {
     "img": "/assets/showcase/linkX.png",
     "heading": "LinkX",
-    "description": "Powerful extension to show all anchor links and emails on the page."
+    "description": "Powerful extension to show all anchor links and emails on the page.",
+    "link": "https://github.com/irizwankhan/LinkX"
   },
   {
     "img": "/assets/showcase/irizwan.png",
     "heading": "Portfolio",
-    "description": "This is my website :)."
+    "description": "This is my website :). Here you will find all about me, myself and I.",
+    "link": "https://www.irizwan.com/all"
   }
 ]

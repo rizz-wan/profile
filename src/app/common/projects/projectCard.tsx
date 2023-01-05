@@ -1,14 +1,7 @@
-import {
-  FontIcon,
-  IconButton,
-  ITheme,
-  Stack,
-  Text,
-  getTheme,
-} from '@fluentui/react';
+import { FontIcon, ITheme, Stack, Text, getTheme } from '@fluentui/react';
 import { Component } from 'react';
 import { card, getShadows } from '../../styles/commonStyles';
-import { getImageContainerStyles, getActionStyles } from './styles';
+import { getImageContainerStyles } from './styles';
 import './styles.scss';
 import { IProjectDetails } from '../../model';
 
@@ -19,24 +12,12 @@ export interface IProjectCardProps {
 }
 
 export class ProjectCard extends Component<IProjectCardProps> {
-  onRoute = (route: string): void => {
-    console.log(route);
-  };
-
   render(): JSX.Element {
     const theme = getTheme();
     const data = this.props.data as IProjectDetails;
 
     return (
       <div className={`${card} card ${getShadows(theme)} projectCard p-1`}>
-        <Stack horizontal horizontalAlign="end">
-          <IconButton
-            className={getActionStyles(this.props.theme)}
-            iconProps={{ iconName: 'OpenInNewTab' }}
-            title="Open in new tab"
-            ariaLabel="Open in new tab"
-          />
-        </Stack>
         <div
           className={`${getImageContainerStyles(data.img)} image-container`}
         ></div>
@@ -44,7 +25,7 @@ export class ProjectCard extends Component<IProjectCardProps> {
           className={`heading m-t-3 ${theme.isInverted ? 'isInverted' : ''}`}
           title={data.heading}
           onClick={() => {
-            this.onRoute('/wall');
+            window.open(data.link);
           }}
         >
           <Text variant="mediumPlus">

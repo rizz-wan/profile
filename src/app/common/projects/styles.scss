@@ -3,9 +3,8 @@
 .projectCard {
   display: block !important;
   .image-container {
-    height: 175px; //168*94, 603*339, 640*360
+    height: 175px;
     background-size: cover;
-    margin-top: -48px;
     background-position: center;
     border-radius: 13px;
     box-shadow: 0 0 0 1px var(--neutralQuaternary);

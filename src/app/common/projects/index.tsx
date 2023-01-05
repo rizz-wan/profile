@@ -91,6 +91,7 @@ export class Projects extends React.Component<IProjectProps, IProjectsState> {
                       img: projectDetail.img,
                       heading: projectDetail.heading,
                       description: projectDetail.description,
+                      link: projectDetail.link,
                     }}
                     onQuickView={this.handlePanelOpen}
                   />
