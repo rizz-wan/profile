@@ -4,11 +4,19 @@ export const borderRadius = 0;
 export const shadowDisplacement = '3px';
 export const shadowSpread = '6px';
 
+export const shouldShowShadow =
+  localStorage.getItem('shouldShowShadow') === 'true';
+
 export const card: string = mergeStyles({
   animationDuration: `${MotionDurations.duration4} !important`,
 });
 
 export const getShadows = (theme: ITheme, isBgWhite = false): string =>
+  shouldShowShadow
+    ? getNormalShadows(theme, isBgWhite)
+    : getShadowLite(theme, isBgWhite);
+
+export const getNormalShadows = (theme: ITheme, isBgWhite = false): string =>
   mergeStyles({
     boxShadow: `${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${
       theme.semanticColors.cardShadowHovered
@@ -25,6 +33,23 @@ export const getShadows = (theme: ITheme, isBgWhite = false): string =>
       },inset -${shadowDisplacement} -${shadowDisplacement} ${shadowSpread} ${
         theme.semanticColors.cardShadow
       }, 0 0 0 1px ${theme.isInverted ? '#3a3a3a' : '#d1d9e6'} !important`,
+    },
+  });
+
+export const getShadowLite = (theme: ITheme, isBgWhite = false): string =>
+  mergeStyles({
+    boxShadow: `${
+      isBgWhite
+        ? ''
+        : `inset 0 0 0 1px ${theme.isInverted ? '#3a3a3a' : '#d1d9e6'}`
+    } !important`,
+    background: theme.isInverted
+      ? 'rgba(0,0,0,0.05)'
+      : 'rgba(255,255,255,0.45)',
+    '.active-button:active': {
+      boxShadow: `0 0 0 1px ${
+        theme.isInverted ? '#3a3a3a' : '#d1d9e6'
+      } !important`,
     },
   });
 
@@ -70,6 +95,11 @@ export const getGlobalStyles = (theme: ITheme): string =>
   });
 
 export const getPivotShadows = (theme: ITheme): string =>
+  shouldShowShadow
+    ? getOriginalPivotShadows(theme)
+    : getPivotShadowsLite(theme);
+
+export const getOriginalPivotShadows = (theme: ITheme): string =>
   mergeStyles({
     '.ms-Pivot': {
       boxShadow: `${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${
@@ -86,6 +116,26 @@ export const getPivotShadows = (theme: ITheme): string =>
       }, inset -3px -3px 7px ${theme.semanticColors.cardShadow}, 0 0 0 1px ${
         theme.isInverted ? '#3a3a3a' : '#d1d9e6'
       } !important;`,
+    },
+  });
+
+export const getPivotShadowsLite = (theme: ITheme): string =>
+  mergeStyles({
+    '.ms-Pivot': {
+      boxShadow: `inset 0 0 0 1px ${
+        theme.isInverted ? '#3a3a3a' : '#d1d9e6'
+      } !important`,
+      background: theme.isInverted
+        ? 'rgba(0,0,0,0.05)'
+        : 'rgba(255,255,255,0.45)',
+    },
+    '.is-selected': {
+      boxShadow: `0 0 0 1px ${
+        theme.isInverted ? '#3a3a3a' : '#d1d9e6'
+      } !important;`,
+      backgroundColor: theme.isInverted
+        ? 'rgba(0,0,0,0.05) !important'
+        : 'rgba(255,255,255,0.45) !important',
     },
   });
 

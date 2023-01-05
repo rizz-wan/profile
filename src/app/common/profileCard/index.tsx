@@ -29,6 +29,13 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
     this.common = common;
   }
 
+  setShadowPreference = () => {
+    if (localStorage.getItem('shouldShowShadow') === 'true')
+      localStorage.setItem('shouldShowShadow', 'false');
+    else localStorage.setItem('shouldShowShadow', 'true');
+    window.location.reload();
+  };
+
   render(): JSX.Element {
     const theme = getTheme();
 
@@ -66,6 +73,25 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
         )}
         {!this.props.hideFooter && (
           <>
+            <div className="custom-button-container plutonic">
+              <span
+                className="custom-button"
+                onClick={() => {
+                  this.setShadowPreference();
+                }}
+              >
+                <FontIcon
+                  className="custom-button-icon"
+                  aria-label="Personalize"
+                  iconName="DeveloperTools"
+                />
+                <span>
+                  {localStorage.getItem('shouldShowShadow') === 'true'
+                    ? 'No shadows please!'
+                    : 'Bring in some shadows!'}
+                </span>
+              </span>
+            </div>
             <Text>
               <TextRenderer data={this.about.aboutSummary[0]}></TextRenderer>
             </Text>
