@@ -40,7 +40,7 @@ export class Blog extends React.Component<IBlogProps> {
             className="contribution-grid"
             width="100%"
             src={
-              'https://raw.githubusercontent.com/irizwankhan/irizwankhan/main/dist/github-contribution-grid-snake.svg'
+              'https://raw.githubusercontent.com/rizz-wan/rizz-wan/main/dist/github-contribution-grid-snake.svg'
             }
             alt="github contribution"
           />

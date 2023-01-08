@@ -37,7 +37,7 @@ export class PenIFrame extends React.Component<
         <iframe
           scrolling="no"
           title="Pen from Rizwan"
-          src={`https://codepen.io/irizwankhan/embed/${
+          src={`https://codepen.io/rizz-wan/embed/${
             this.props.hash
           }?default-tab=result&theme-id=${theme.isInverted ? 'dark' : 'light'}`}
           frameBorder="no"
