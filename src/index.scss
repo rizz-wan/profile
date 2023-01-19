@@ -21,12 +21,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-image: url('./app/assets/img/bg1.png') !important;
+  background-image: url('./app/assets/img/bodyBg.svg') !important;
   background-size: contain !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
   @media (max-width: 1590px) {
-    background-image: none !important;
+    // background-image: none !important;
   }
 }
 *:focus {

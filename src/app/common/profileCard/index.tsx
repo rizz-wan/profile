@@ -36,6 +36,10 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
     window.location.reload();
   };
 
+  openBlog = () => {
+    window.open(about.blog, '_blank');
+  };
+
   render(): JSX.Element {
     const theme = getTheme();
 
@@ -107,16 +111,14 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
                     className={`${getShadows(
                       theme
                     )} custom-button active-button`}
-                    onClick={() => {
-                      this.props.onTabChange?.(tabs[3]);
-                    }}
+                    onClick={() => this.openBlog()}
                   >
-                    <FontIcon
-                      className="custom-button-icon"
-                      aria-label="Blog"
-                      iconName="Blog"
-                    />
                     {this.common.readTheBlog}
+                    <FontIcon
+                      className="m-l-1"
+                      aria-label="Blog"
+                      iconName="News"
+                    />
                   </span>
                 </Stack.Item>
                 <Stack.Item grow> </Stack.Item>

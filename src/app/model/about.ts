@@ -4,6 +4,7 @@ export interface IAbout {
   resumeLink: string;
   github: string;
   linkedIn: string;
+  blog: string;
   email: string;
   about: string[];
   aboutSummary: string[];
