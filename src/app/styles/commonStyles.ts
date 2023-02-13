@@ -27,6 +27,7 @@ export const getNormalShadows = (theme: ITheme, isBgWhite = false): string =>
         ? ''
         : `, inset 0 0 0 1px ${theme.isInverted ? '#3a3a3a' : '#d1d9e6'}`
     } !important`,
+    backgroundColor: theme.palette.white,
     '.active-button:active': {
       boxShadow: `inset ${shadowDisplacement} ${shadowDisplacement} ${shadowSpread} ${
         theme.semanticColors.cardShadowHovered
@@ -50,6 +51,11 @@ export const getShadowLite = (theme: ITheme, isBgWhite = false): string =>
       boxShadow: `0 0 0 1px ${
         theme.isInverted ? '#3a3a3a' : '#d1d9e6'
       } !important`,
+    },
+    '.ms-TextField-field': {
+      background: theme.isInverted
+        ? 'rgba(0,0,0,0.05)'
+        : 'rgba(255,255,255,0.45)',
     },
   });
 
@@ -109,6 +115,7 @@ export const getOriginalPivotShadows = (theme: ITheme): string =>
       }, inset 0 0 0 1px ${
         theme.isInverted ? '#3a3a3a' : '#d1d9e6'
       } !important`,
+      backgroundColor: theme.palette.white,
     },
     '.is-selected': {
       boxShadow: `inset 2px 2px 5px ${
