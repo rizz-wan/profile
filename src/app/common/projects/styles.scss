@@ -48,7 +48,7 @@
 
   .description {
     -webkit-line-clamp: 4;
-    height: 76px;
+    height: 94px;
   }
 
   .footerButton {
@@ -100,5 +100,6 @@
   }
   .panel-image {
     max-height: 250px;
+    border-radius: 16px;
   }
 }

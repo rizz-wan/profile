@@ -1,44 +1,44 @@
 [
   {
+    "img": "/assets/showcase/mocktail.png",
+    "heading": "Mocktail",
+    "description": "An awesome react template with first class configuration for highly scalable, easily maintainable and highly performant react applications, easily maintainable and highly performant react applications.<br/><br/>There is a lighter version of this project, <a href='https://mocktail-air.vercel.app/' target='_blank'>mocktail-air</a> which has all the unnecessary things stripped out to help kick-start even faster.<br/><br/>For Login requirements, we integrated MSAL login in mocktail, <a href='https://mocktail-msal.vercel.app/' target='_blank'>mocktail-msal</a>, you just have to add your Client Id <a href='https://github.com/rizz-wan/mocktail-msal/blob/master/src/utils/msal/authConfig.ts#:~:text=clientId%3A%20%27-,Client%20ID,-%27%2C' target='_blank'>here</a> and you are all set to go!<br/><br/>Tools and technologies used:-<ul><li>React</li><li>Typescript</li><li>Fluent UI</li><li>Jest</li><li>HTML</li><li>SCSS</li><li>MSAL</li></ul>",
+    "link": "https://mocktail.vercel.app/"
+  },
+  {
+    "img": "/assets/showcase/irizwan.png",
+    "heading": "Portfolio",
+    "description": "This is my website :). Here you will find all about me, myself and I.<br/>Using React, it follows the neumorphism design language by default but has a switcher that switches between neumorphism and glassmorphism effectively.<br/><br/>Tools and technologies used:-<ul><li>React</li><li>Typescript</li><li>HTML</li><li>SCSS</li></ul>",
+    "link": "https://www.irizwan.com/all"
+  },
+  {
     "img": "/assets/showcase/panX.png",
     "heading": "PanX",
-    "description": "A chrome extension boilerplate to inject an iframe panel to a webpage.",
+    "description": "A chrome extension boilerplate to inject an iframe panel to a webpage.<br/>This sort of creates a sandboxed environment for all your extension stuff to be present directly on the page and get rid of the annoying \"popup\" provided OOB that goes away as soon as you start interacting with the page content.<br/><br/>It also has examples as to how to communicate between the host page and your extension to create more coherent experience for your users.<br/><br/>Tools and technologies used:-<ul><li>Chrome Extension</li><li>Service workers</li><li>Vanilla JS</li><li>HTML</li><li>CSS</li></ul>",
     "link": "https://github.com/rizz-wan/PanX"
   },
   {
     "img": "/assets/showcase/tow.png",
     "heading": "TOW:Terminal On Web",
-    "description": "A fun terminal style portfolio site.",
+    "description": "A fun terminal style portfolio site. It is a complete React project which mimics GNU terminal.<br/>Tools and technologies used:-<ul><li>React</li><li>Typescript</li><li>HTML</li><li>SCSS</li></ul>",
     "link": "https://geek.irizwan.com/"
   },
   {
     "img": "/assets/showcase/highLight.png",
     "heading": "High-light",
-    "description": "A cross-browser library of CSS to highlight your content.",
+    "description": "A cross-browser library of CSS to highlight your content.<br/>It's a pure CSS library written in SCSS and compiled to be distributed as <a href='https://github.com/rizz-wan/high-light/blob/main/dist/high-light.min.css' target='_blank'>minified CSS</a>.<br/><br/>You can simply include <a href='https://rizz-wan.github.io/high-light/dist/high-light.min.css' target='_blank'>this compiled CSS</a>, as you would normally use any other CSS file, in your project and highlight any piece of content on the go!<br/><br/>Currently supported highlights:-<ul><li><span class='high-light black-widow'>black-widow</span></li><br/><li><span class='high-light light-knight'>light-knight</span></li></ul>Tools and technologies used:-<ul><li>SASS</li><li>CSS</li><li>HTML</li><li>SCSS</li><li>Github workflows</li></ul>",
     "link": "https://rizz-wan.github.io/high-light/"
   },
   {
     "img": "/assets/showcase/navlet.png",
     "heading": "Navlet",
-    "description": "Add scroll to top button on any page.",
+    "description": "Add scroll to top button on any page.<br/>This extension adds scroll to top and bottom button on any page.<br/>You can <a href='https://chrome.google.com/webstore/detail/navlet-scroll-to-top-and/fobklfpkilfknmkpcdecodcbfihdifnh' target='_blank'>get this extension from chrome store</a>.<br/><br/>You can also use this as a bookmarklet to use only on the pages you want. Simply drag the \"Navlet\" button <a href='https://rizz-wan.github.io/navlet/' target='_blank'>here</a> on your bookmarks bar and just click it on any page where you would want help to scroll at top and bottom with ease :)<br/><br/>Tools and technologies used:-<ul><li>Bookmarklet</li><li>Chrome Extension</li><li>Service workers</li><li>Vanilla JS</li><li>HTML</li><li>CSS</li></ul>",
     "link": "https://rizz-wan.github.io/navlet/"
-  },
-  {
-    "img": "/assets/showcase/mocktail.png",
-    "heading": "Mocktail",
-    "description": "An awesome react template with first class configuration for highly scalable, easily maintainable and highly performant react applications, easily maintainable and highly performant react applications.",
-    "link": "https://mocktail.vercel.app/"
   },
   {
     "img": "/assets/showcase/linkX.png",
     "heading": "LinkX",
-    "description": "Powerful extension to show all anchor links and emails on the page.",
+    "description": "Powerful extension to show all anchor links and emails on the page.<br/>This is more of an exploration project to explore the usability of <a href='https://github.com/rizz-wan/PanX' target='_blank'>PanX</a>, but feel free to have a look and see if you can get something of value out of it :)<br/>Tools and technologies used:-<ul><li>PanX</li><li>Chrome Extension</li><li>Service workers</li><li>Vanilla JS</li><li>HTML</li><li>CSS</li></ul>",
     "link": "https://github.com/rizz-wan/LinkX"
-  },
-  {
-    "img": "/assets/showcase/irizwan.png",
-    "heading": "Portfolio",
-    "description": "This is my website :). Here you will find all about me, myself and I.",
-    "link": "https://www.irizwan.com/all"
   }
 ]

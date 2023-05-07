@@ -33,7 +33,7 @@ export class ProjectCard extends Component<IProjectCardProps> {
           </Text>
         </div>
         <div className="description">
-          <Text title={data.description}>{data.description}</Text>
+          <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
         </div>
         <Stack horizontal className="custom-button-container">
           <Stack.Item grow> </Stack.Item>

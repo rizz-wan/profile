@@ -74,7 +74,11 @@ export class Projects extends React.Component<IProjectProps, IProjectsState> {
             className="panel-image m-t-2"
             src={this.state.selectedProjectDetails?.img}
           />
-          <p>{this.state.selectedProjectDetails?.description}</p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: this.state.selectedProjectDetails?.description,
+            }}
+          ></p>
         </Panel>
         <div className="ms-Grid" dir="ltr">
           <div className="ms-Grid-row">

@@ -4,15 +4,15 @@ export const borderRadius = 0;
 export const shadowDisplacement = '3px';
 export const shadowSpread = '6px';
 
-export const shouldShowShadow =
-  localStorage.getItem('shouldShowShadow') === 'true';
+export const hideShadows =
+  localStorage.getItem('hideShadows') !== 'true';
 
 export const card: string = mergeStyles({
   animationDuration: `${MotionDurations.duration4} !important`,
 });
 
 export const getShadows = (theme: ITheme, isBgWhite = false): string =>
-  shouldShowShadow
+  hideShadows
     ? getNormalShadows(theme, isBgWhite)
     : getShadowLite(theme, isBgWhite);
 
@@ -101,7 +101,7 @@ export const getGlobalStyles = (theme: ITheme): string =>
   });
 
 export const getPivotShadows = (theme: ITheme): string =>
-  shouldShowShadow
+  hideShadows
     ? getOriginalPivotShadows(theme)
     : getPivotShadowsLite(theme);
 

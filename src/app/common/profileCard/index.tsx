@@ -30,9 +30,9 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
   }
 
   setShadowPreference = () => {
-    if (localStorage.getItem('shouldShowShadow') === 'true')
-      localStorage.setItem('shouldShowShadow', 'false');
-    else localStorage.setItem('shouldShowShadow', 'true');
+    if (localStorage.getItem('hideShadows') === 'true')
+      localStorage.setItem('hideShadows', 'false');
+    else localStorage.setItem('hideShadows', 'true');
     window.location.reload();
   };
 
@@ -90,7 +90,7 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
                   iconName="DeveloperTools"
                 />
                 <span>
-                  {localStorage.getItem('shouldShowShadow') === 'true'
+                  {localStorage.getItem('hideShadows') !== 'true'
                     ? 'No shadows please!'
                     : 'Bring in some shadows!'}
                 </span>
