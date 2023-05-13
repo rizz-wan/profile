@@ -44,10 +44,10 @@ export class ProjectCard extends Component<IProjectCardProps> {
             >
               <FontIcon
                 className="custom-button-icon"
-                aria-label="Quick view"
+                aria-label="Learn more"
                 iconName="RedEye"
               />
-              {'Quick View'}
+              {'Learn more'}
             </span>
           </Stack.Item>
         </Stack>

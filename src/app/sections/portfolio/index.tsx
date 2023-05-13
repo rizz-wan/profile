@@ -66,7 +66,6 @@ export class Portfolio extends React.Component<{}, IPortfolioState> {
           <div className={`${card} card ${getShadows(theme)}`}>
             {this.portfolio.portfolioSubheader}
           </div>
-          <ShowCase isMinVersion />
           <Stack.Item align="center" className="w-100 sub-pivot">
             <Pivot
               className={`${getPivotShadows(theme)} ms-motion-slideUpIn`}
@@ -93,6 +92,7 @@ export class Portfolio extends React.Component<{}, IPortfolioState> {
             </Pivot>
           </Stack.Item>
         </Stack>
+        <ShowCase isMinVersion />
         <DumbFooter />
         {!this.projectDetails.length &&
           !(this.state.selectedTab === subTabs[1]) && (
