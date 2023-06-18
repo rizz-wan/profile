@@ -4,8 +4,8 @@
     "date": "March 1",
     "designation": "Software Engineer 2",
     "company": {
-      "text": "MAQ Software Pvt. Ltd.",
-      "link": "https://maqsoftware.com/"
+      "text": "",
+      "link": ""
     },
     "location": "Mumbai, India",
     "summary": [
@@ -21,8 +21,8 @@
     "date": "September 3",
     "designation": "Software Engineer 1",
     "company": {
-      "text": "MAQ Software Pvt. Ltd.",
-      "link": "https://maqsoftware.com/"
+      "text": "",
+      "link": ""
     },
     "location": "Mumbai, India",
     "summary": [
@@ -37,8 +37,8 @@
     "date": "September 3",
     "designation": "Software Intern",
     "company": {
-      "text": "MAQ Software Pvt. Ltd.",
-      "link": "https://maqsoftware.com/"
+      "text": "",
+      "link": ""
     },
     "location": "Mumbai, India",
     "summary": [
