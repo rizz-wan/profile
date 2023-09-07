@@ -125,7 +125,7 @@ export const getPivotShadowsLite = (theme: ITheme): string =>
       boxShadow: `inset 0 0 0 1px ${
         theme.isInverted ? '#3a3a3a' : '#d1d9e6'
       } !important`,
-      background: theme.isInverted ? '#333333' : '#fbfbfb',
+      background: `${theme.palette.neutralLighter} !important`,
     },
     '.is-selected': {
       boxShadow: `0 0 0 1px ${

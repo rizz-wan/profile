@@ -63,7 +63,9 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
         </div>
         {this.props.hideFooter && (
           <>
-            {<TextRenderer data={this.about.about[0]}></TextRenderer>}
+            <span className="m-l-1">
+              {<TextRenderer data={this.about.about[0]}></TextRenderer>}
+            </span>
             <p>
               <TextRenderer data={this.about.about[1]}></TextRenderer>
             </p>
@@ -96,7 +98,7 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
                 </span>
               </span>
             </div>
-            <Text>
+            <Text className="m-l-1">
               <TextRenderer data={this.about.aboutSummary[0]}></TextRenderer>
             </Text>
             <Text className="name">{this.about.maidenName}</Text>

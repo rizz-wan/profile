@@ -6,3 +6,16 @@
   -webkit-text-fill-color: transparent;
   text-shadow: none !important;
 }
+.w-lg-60 {
+  width: 50%;
+}
+@media (max-width: 1023px) {
+  .w-lg-60 {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .w-lg-60 {
+    width: 100%;
+  }
+}

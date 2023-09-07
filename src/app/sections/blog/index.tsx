@@ -31,6 +31,16 @@ export class Blog extends React.Component<IBlogProps> {
 
     return (
       <>
+        <Masonry
+          breakpointCols={this.breakpointColumnsObjSmall}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          <MailIcon />
+          <LinkedInIcon />
+          <GithubIcon />
+          <ButtonCard onThemeChange={this.props.onThemeChange} />
+        </Masonry>
         <div
           className={`${card} card ${getShadows(
             theme
@@ -45,16 +55,6 @@ export class Blog extends React.Component<IBlogProps> {
             alt="github contribution"
           />
         </div>
-        <Masonry
-          breakpointCols={this.breakpointColumnsObjSmall}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column"
-        >
-          <MailIcon />
-          <LinkedInIcon />
-          <GithubIcon />
-          <ButtonCard onThemeChange={this.props.onThemeChange} />
-        </Masonry>
         <ShowCase isMinVersion />
         <DumbFooter />
         <br />

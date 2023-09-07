@@ -1,4 +1,3 @@
-import { getTheme } from '@fluentui/react';
 import * as React from 'react';
 import Masonry from 'react-masonry-css';
 import {
@@ -10,7 +9,6 @@ import {
   MailIcon,
   ProfileCard,
 } from '../../common';
-import { card, getShadows } from '../../styles/commonStyles';
 import { IAbout } from '../../model';
 import about from '../../data/about.json';
 import { scrollToTop } from '../../utils';
@@ -32,13 +30,9 @@ export class About extends React.Component<IAboutProps> {
   };
 
   render(): JSX.Element {
-    const theme = getTheme();
-
     return (
       <>
-        <div className={`${card} card ${getShadows(theme)}`}>
-          {this.about.aboutSubheader}
-        </div>
+        <ProfileCard hideFooter />
         <Masonry
           breakpointCols={this.breakpointColumnsObjSmall}
           className="my-masonry-grid"
@@ -49,7 +43,6 @@ export class About extends React.Component<IAboutProps> {
           <GithubIcon />
           <ButtonCard onThemeChange={this.props.onThemeChange} />
         </Masonry>
-        <ProfileCard hideFooter />
         <Job isDetailedView />
         <DumbFooter />
       </>

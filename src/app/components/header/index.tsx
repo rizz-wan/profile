@@ -23,7 +23,7 @@ export class Header extends React.Component<IHeaderProps> {
     const theme = getTheme();
     return (
       <Stack className="header m-t-3">
-        <Stack.Item align="center" className="w-100">
+        <Stack.Item align="center" className="w-lg-60">
           <Pivot
             onLinkClick={this.handleTabChange}
             className={`${getPivotShadows(theme)} ms-motion-slideDownIn`}
@@ -42,7 +42,7 @@ export class Header extends React.Component<IHeaderProps> {
               itemKey={tabs[2]}
             ></PivotItem>
             <PivotItem
-              itemIcon='AppIconDefaultList'
+              itemIcon="AppIconDefaultList"
               itemKey={tabs[3]}
             ></PivotItem>
           </Pivot>
