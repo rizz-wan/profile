@@ -63,9 +63,14 @@ export const darkTheme = {
   },
 };
 
-export const isInvertedTheme =
-  window.matchMedia &&
-  window.matchMedia('(prefers-color-scheme: dark)').matches;
+const preferredThemeByUser = localStorage.getItem('theme')
+  ? localStorage.getItem('theme') === 'dark'
+  : null;
+
+export const isInvertedTheme = preferredThemeByUser
+  ? preferredThemeByUser
+  : window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 export function setInitialThemeClassToBody() {
   let documentClassList = document.body.classList;

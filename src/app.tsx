@@ -39,6 +39,9 @@ function App(): JSX.Element {
     setUseDarkMode(!darkMode);
     document.body.classList.toggle('light');
     document.body.classList.toggle('dark');
+    if (localStorage.getItem('theme') === 'dark')
+      localStorage.setItem('theme', 'light');
+    else localStorage.setItem('theme', 'dark');
   }
 
   return (

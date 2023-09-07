@@ -4,8 +4,7 @@ export const borderRadius = 0;
 export const shadowDisplacement = '3px';
 export const shadowSpread = '6px';
 
-export const hideShadows =
-  localStorage.getItem('hideShadows') !== 'true';
+export const hideShadows = localStorage.getItem('hideShadows') !== 'true';
 
 export const card: string = mergeStyles({
   animationDuration: `${MotionDurations.duration4} !important`,
@@ -44,18 +43,14 @@ export const getShadowLite = (theme: ITheme, isBgWhite = false): string =>
         ? ''
         : `inset 0 0 0 1px ${theme.isInverted ? '#3a3a3a' : '#d1d9e6'}`
     } !important`,
-    background: theme.isInverted
-      ? 'rgba(0,0,0,0.05)'
-      : 'rgba(255,255,255,0.45)',
+    background: theme.isInverted ? '#333333' : '#fbfbfb',
     '.active-button:active': {
       boxShadow: `0 0 0 1px ${
         theme.isInverted ? '#3a3a3a' : '#d1d9e6'
       } !important`,
     },
     '.ms-TextField-field': {
-      background: theme.isInverted
-        ? 'rgba(0,0,0,0.05)'
-        : 'rgba(255,255,255,0.45)',
+      background: theme.isInverted ? '#333333' : '#fbfbfb',
     },
   });
 
@@ -101,9 +96,7 @@ export const getGlobalStyles = (theme: ITheme): string =>
   });
 
 export const getPivotShadows = (theme: ITheme): string =>
-  hideShadows
-    ? getOriginalPivotShadows(theme)
-    : getPivotShadowsLite(theme);
+  hideShadows ? getOriginalPivotShadows(theme) : getPivotShadowsLite(theme);
 
 export const getOriginalPivotShadows = (theme: ITheme): string =>
   mergeStyles({
@@ -132,23 +125,25 @@ export const getPivotShadowsLite = (theme: ITheme): string =>
       boxShadow: `inset 0 0 0 1px ${
         theme.isInverted ? '#3a3a3a' : '#d1d9e6'
       } !important`,
-      background: theme.isInverted
-        ? 'rgba(0,0,0,0.05)'
-        : 'rgba(255,255,255,0.45)',
+      background: theme.isInverted ? '#333333' : '#fbfbfb',
     },
     '.is-selected': {
       boxShadow: `0 0 0 1px ${
         theme.isInverted ? '#3a3a3a' : '#d1d9e6'
       } !important;`,
       backgroundColor: theme.isInverted
-        ? 'rgba(0,0,0,0.05) !important'
-        : 'rgba(255,255,255,0.45) !important',
+        ? '#333333 !important'
+        : '#fbfbfb !important',
     },
   });
 
 export const getBackgroundColor = (theme: ITheme): string =>
   mergeStyles({
-    backgroundColor: theme.semanticColors.bodyBackground,
+    backgroundColor: hideShadows
+      ? theme.semanticColors.bodyBackground
+      : theme.isInverted
+      ? '#333333'
+      : '#fbfbfb',
   });
 
 export const getImageFilter = (
