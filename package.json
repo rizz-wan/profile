@@ -52,8 +52,5 @@
     "@types/react-helmet": "^6.1.1",
     "@types/react-router-dom": "^5.1.7",
     "typescript": "^4.3.4"
-  },
-  "engines": {
-    "node": ">=18.0.0"
   }
 }
