@@ -8,7 +8,7 @@
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "test": "react-scripts test"
   },
   "browserslist": {
@@ -36,7 +36,7 @@
     "@testing-library/user-event": "^12.8.3",
     "@uifabric/icons": "^7.5.23",
     "emailjs-com": "^3.2.0",
-    "node-sass": "^6.0.0",
+    "node-sass": "^6.0.1",
     "office-ui-fabric-core": "^11.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
