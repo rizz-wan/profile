@@ -63,9 +63,6 @@ export class Portfolio extends React.Component<{}, IPortfolioState> {
     return (
       <>
         <Stack className="m-t-3">
-          <div className={`${card} card ${getShadows(theme)}`}>
-            {this.portfolio.portfolioSubheader}
-          </div>
           <Stack.Item align="center" className="w-100 sub-pivot">
             <Pivot
               className={`${getPivotShadows(theme)} ms-motion-slideUpIn`}

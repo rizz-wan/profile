@@ -148,6 +148,7 @@
   margin-top: 12px;
   justify-content: center;
   .custom-button {
+    user-select: none;
     cursor: pointer;
     position: relative;
     padding: 8px;

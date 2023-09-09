@@ -48,7 +48,7 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
         className={`${card} card ${getShadows(
           theme
         )} profile ${getExternalLinkStyles(theme)} ${
-          this.props.hideFooter ? 'a-d4 m-t-13' : ''
+          this.props.hideFooter ? 'a-d4 m-t-17' : ''
         }`}
       >
         <div className={`image-container ${getShadows(theme)}`}>
@@ -89,7 +89,7 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
                 <FontIcon
                   className="custom-button-icon"
                   aria-label="Personalize"
-                  iconName="DeveloperTools"
+                  iconName="EyeShadow"
                 />
                 <span>
                   {localStorage.getItem('hideShadows') !== 'true'
