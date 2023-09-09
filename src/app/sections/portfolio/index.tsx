@@ -2,7 +2,7 @@ import { getTheme, Pivot, PivotItem, Stack } from '@fluentui/react';
 import * as React from 'react';
 import { DumbFooter, MailForm, Pens, Projects, ShowCase } from '../../common';
 import { IPortfolio, IProjectDetails } from '../../model';
-import { card, getPivotShadows, getShadows } from '../../styles/commonStyles';
+import { getPivotShadows } from '../../styles/commonStyles';
 import { getSubPathName, scrollToTop, subTabs, tabs } from '../../utils';
 import portfolio from '../../data/portfolio.json';
 import projectDetails from '../../data/projectDetails.json';
