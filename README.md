@@ -1,6 +1,6 @@
-# irizwan.com
+# irizwan.in
 
-Welcome to the vitals of [my website](https://irizwan.com).
+Welcome to the vitals of [my website](https://irizwan.in).
 
 This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed on [Vercel](https://vercel.com/home).
 

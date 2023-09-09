@@ -9,7 +9,7 @@
     "img": "/assets/showcase/irizwan.png",
     "heading": "Portfolio",
     "description": "This is my website :). Here you will find all about me, myself and I.<br/>Using React, it follows the neumorphism design language by default but has a switcher that switches between neumorphism and glassmorphism effectively.<br/><br/>Tools and technologies used:-<ul><li>React</li><li>Typescript</li><li>HTML</li><li>SCSS</li></ul>",
-    "link": "https://www.irizwan.com/all"
+    "link": "https://www.irizwan.in/all"
   },
   {
     "img": "/assets/showcase/panX.png",
@@ -21,7 +21,7 @@
     "img": "/assets/showcase/tow.png",
     "heading": "TOW:Terminal On Web",
     "description": "A fun terminal style portfolio site. It is a complete React project which mimics GNU terminal.<br/>Tools and technologies used:-<ul><li>React</li><li>Typescript</li><li>HTML</li><li>SCSS</li></ul>",
-    "link": "https://geek.irizwan.com/"
+    "link": "https://geek.irizwan.in/"
   },
   {
     "img": "/assets/showcase/highLight.png",
