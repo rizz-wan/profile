@@ -48,7 +48,7 @@ export class ProfileCard extends React.Component<IProfileCardProps> {
         className={`${card} card ${getShadows(
           theme
         )} profile ${getExternalLinkStyles(theme)} ${
-          this.props.hideFooter ? 'a-d4 m-t-17' : ''
+          this.props.hideFooter ? 'a-d4' : ''
         }`}
       >
         <div className={`image-container ${getShadows(theme)}`}>
