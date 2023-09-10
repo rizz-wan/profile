@@ -62,6 +62,7 @@ export class Projects extends React.Component<IProjectProps, IProjectsState> {
     return (
       <div className="projects">
         <Panel
+          isLightDismiss
           className={`${getPanelShadows(theme)} panel`}
           type={PanelType.medium}
           headerText={this.state.selectedProjectDetails?.heading}

@@ -96,7 +96,11 @@
 }
 .panel {
   .ms-Panel-content {
+    color: var(--neutralPrimary);
     overflow: hidden;
+    a {
+      color: var(--themePrimary);
+    }
   }
   .panel-image {
     max-height: 250px;
