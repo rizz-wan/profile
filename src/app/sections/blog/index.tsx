@@ -1,4 +1,4 @@
-import { getTheme } from '@fluentui/react';
+// import { getTheme } from '@fluentui/react';
 import * as React from 'react';
 import Masonry from 'react-masonry-css';
 import {
@@ -10,7 +10,7 @@ import {
   MailIcon,
   ShowCase,
 } from '../../common';
-import { card, getShadows } from '../../styles/commonStyles';
+// import { card, getShadows } from '../../styles/commonStyles';
 import { scrollToTop } from '../../utils';
 
 interface IBlogProps {
@@ -27,7 +27,7 @@ export class Blog extends React.Component<IBlogProps> {
     767: 1,
   };
   render(): JSX.Element {
-    const theme = getTheme();
+    // const theme = getTheme();
 
     return (
       <>
@@ -41,7 +41,7 @@ export class Blog extends React.Component<IBlogProps> {
           <GithubIcon />
           <ButtonCard onThemeChange={this.props.onThemeChange} />
         </Masonry>
-        <div
+        {/* <div
           className={`${card} card ${getShadows(
             theme
           )} p-1 contribution-grid-con`}
@@ -50,11 +50,11 @@ export class Blog extends React.Component<IBlogProps> {
             className="contribution-grid"
             width="100%"
             src={
-              'https://raw.githubusercontent.com/rizz-wan/rizz-wan/main/dist/github-contribution-grid-snake.svg'
+              'https://ssr-contributions-svg.vercel.app/_/rizz-wan?format=svg&&widget_size=small&chart=calendar&weeks=40'
             }
             alt="github contribution"
           />
-        </div>
+        </div> */}
         <ShowCase isMinVersion />
         <DumbFooter />
         <br />
